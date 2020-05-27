@@ -47,8 +47,8 @@ void practice4_4(void)
 //    printf("You entered %d.%d.%d", a, b, c);
 //}
 
-int main(void)
-{
-    practice4_4();
-    return 0;
-}
+//int main(void)
+//{
+//    practice4_4();
+//    return 0;
+//}
