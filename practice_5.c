@@ -138,9 +138,9 @@ void practice5_8(void)
 
 }
 
-int main(void)
-{
-    practice5_8();
-    return 0;
-}
+//int main(void)
+//{
+//    practice5_8();
+//    return 0;
+//}
 
