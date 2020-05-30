@@ -199,9 +199,24 @@ void practice7_8(void)
     }
 }
 
+void practice7_11(void ){
+    int initial,c;
+    printf("Enter a first and last name: ");
+    //保留first name 的首字母，其余丢弃
+    initial = getchar();
+    while (getchar() != ' '){}
+    //输出 last name
+    while ((c=getchar()) != '\n'){
+        printf("%c",c);
+    }
+    //最受输出 first name 的首字母
+    printf(", %c.",initial);
+
+}
+
 int main(void ){
 
-    practice7_8();
+    practice7_10();
 //int i=46340;
 //    printf("%30d%30d\n", i, i * i);
     return 0;
