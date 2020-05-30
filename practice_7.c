@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <math.h>
 
 void practice7_1(void ){
     for (short i = 100; i < 1000; ++i) {
@@ -199,9 +200,114 @@ void practice7_8(void)
     }
 }
 
+void practice7_11(void ){
+    int initial,c;
+    printf("Enter a first and last name: ");
+    //保留first name 的首字母，其余丢弃
+    initial = getchar();
+    while (getchar() != ' '){}
+    //输出 last name
+    while ((c=getchar()) != '\n'){
+        printf("%c",c);
+    }
+    //最后输出 first name 的首字母
+    printf(", %c.",initial);
+
+}
+
+void practice7_12(void ){
+    float result, operand;
+    int operator;
+    bool flag = true;
+
+    printf("Enter an expression: ");
+    //读取第一个数字
+    scanf("%f", &result);
+
+    while ((operator = getchar()) != '\n'){
+        scanf("%f", &operand);
+        switch (operator) {
+            case '+':
+                result += operand;
+                break;
+            case '-':
+                result -= operand;
+                break;
+            case '*':
+                result *= operand;
+                break;
+            case '/':
+                result /= operand;
+                break;
+            default:
+                flag = false;
+                printf("not valid operator");
+                break;
+        }
+        if (!flag) break;
+    }
+
+    if (flag)   printf("value of expression: %f", result);
+}
+
+void practice7_13(void ){
+    int count=0, lengthSum=0, c;
+    float averageLength;
+
+    printf("Enter a sentence: ");
+
+    while ((c = getchar()) != '\n'){
+        //单词分隔符
+        if (c == ' ' || c == ',' || c == '.' || c == '!')
+            ++count;
+        else
+            ++lengthSum;
+    }
+
+    if(count != 0){
+        averageLength = (float)lengthSum / count;
+        printf("Average word length: %.1f", averageLength);
+    }
+}
+
+void practice7_14(void ){
+    int count=0, lengthSum=0, c;
+    double number, squareRoot, guess = 1;
+
+    printf("Enter a positive number: ");
+    scanf("%lf", &number);
+
+    if(number > 0){
+        squareRoot = (guess + number / guess) / 2;
+        while (fabs(guess - squareRoot) > 0.00001){
+            guess = squareRoot;
+            squareRoot = (guess + number / guess) / 2;
+        }
+        printf("Square root: %f", squareRoot);
+    }
+    else printf("not a valid number");
+}
+
+void practice7_15(void ){
+    int number;
+    double factorial = 1;
+//    printf("Enter a positive integer: ");
+//    scanf("%d", &number);
+
+    for (number = 6; number < 100 && factorial > 0 && !isinf(factorial) ; ++number) {
+        factorial = 1;
+        for (int i = 1; i <= number; ++i) {
+            factorial *= i;
+        }
+    }
+
+    printf("from number: %d overflows", number - 1);
+
+}
+
 int main(void ){
 
-    practice7_8();
+    practice7_15();
 //int i=46340;
 //    printf("%30d%30d\n", i, i * i);
     return 0;
