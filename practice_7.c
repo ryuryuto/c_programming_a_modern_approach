@@ -192,7 +192,7 @@ void practice7_8(void)
         else
             printf("7:00 p.m., arriving at 9:20 p.m.\n");
     }else if (minutesSinceMidnight < 21 * 60 + 45){
-        if((minutesSinceMidnight - (19 * 60 + 45)) < ((21 * 60 + 45) - minutesSinceMidnight))
+        if((minutesSinceMidnight - 19 * 60) < ((21 * 60 + 45) - minutesSinceMidnight))
             printf("7:00 p.m., arriving at 9:20 p.m.\n");
         else
             printf("9:45 p.m., arriving at 11:58 p.m.\n");
