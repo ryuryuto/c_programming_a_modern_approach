@@ -39,7 +39,9 @@ void practice6_2(void ){
     printf("Greatest common divisor: %d", m);
 
 }
-
+/**
+ * 除以最大公约数
+ */
 void practice6_3(void ){
     int a, b, m, n;
     printf("Enter a fraction: ");
@@ -117,7 +119,7 @@ void practice6_10(void ){
 }
 
 void practice6_11(void ){
-    long num,factorial;
+    unsigned long long num,factorial;
     float e=1;
     printf("Enter a  number: ");
     scanf("%d", &num);
@@ -134,7 +136,7 @@ void practice6_11(void ){
 
 }
 
-int main(void ){
-    practice6_11();
-    return 0;
-}
+//int main(void ){
+//    practice6_11();
+//    return 0;
+//}

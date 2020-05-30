@@ -90,7 +90,7 @@ void practice5_7(void)
 
 void practice5_8(void)
 {
-    int hour,minute,minutesSinceMidnight;
+    int hour, minute, minutesSinceMidnight;
 
     printf("Enter a 24-hour time: ");
     scanf("%d:%d", &hour,&minute);
@@ -123,13 +123,13 @@ void practice5_8(void)
             printf("2:00 p.m., arriving at 4:08 p.m.\n");
         else
             printf("3:45 p.m., arriving at 5:55 p.m.\n");
-    }else if (minutesSinceMidnight < 17 * 60){
-        if((minutesSinceMidnight - (15 * 60 + 45)) < (17 * 60 - minutesSinceMidnight))
+    }else if (minutesSinceMidnight < 19 * 60){
+        if((minutesSinceMidnight - (15 * 60 + 45)) < (19 * 60 - minutesSinceMidnight))
             printf("3:45 p.m., arriving at 5:55 p.m.\n");
         else
             printf("7:00 p.m., arriving at 9:20 p.m.\n");
     }else if (minutesSinceMidnight < 21 * 60 + 45){
-        if((minutesSinceMidnight - (15 * 60 + 45)) < ((21 * 60 + 45) - minutesSinceMidnight))
+        if((minutesSinceMidnight - (19 * 60 + 45)) < ((21 * 60 + 45) - minutesSinceMidnight))
             printf("7:00 p.m., arriving at 9:20 p.m.\n");
         else
             printf("9:45 p.m., arriving at 11:58 p.m.\n");
