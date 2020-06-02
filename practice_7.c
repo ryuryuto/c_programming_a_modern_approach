@@ -305,11 +305,11 @@ void practice7_15(void ){
 
 }
 
-int main(void ){
-
-    practice7_15();
-//int i=46340;
-//    printf("%30d%30d\n", i, i * i);
-    return 0;
-}
+//int main(void ){
+//
+//    practice7_15();
+////int i=46340;
+////    printf("%30d%30d\n", i, i * i);
+//    return 0;
+//}
 
