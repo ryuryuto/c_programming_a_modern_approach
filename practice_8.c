@@ -274,15 +274,15 @@ void project17(void ){
 
     //输出结果
     for (int i = 0; i < size; ++i) {
-        for (int j = 0; j < size; ++j) {
+        for (int j = 0; j < size; ++j) {;
             printf("%5d", arr[i][j]);
         }
         printf("\n");
     }
 }
 
-int main(void ){
-    project17();
-
-    return 0;
-}
+//int main(void ){
+//    project17();
+//
+//    return 0;
+//}
