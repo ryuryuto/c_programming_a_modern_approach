@@ -5,10 +5,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-void push_stack(int stack[], int* top, int c);
-int pop_stack(int stack[], int* top);
-bool stack_empty(int* top);
-bool stack_full(int* top, int STACK_SIZE);
+void push_stack(int stack[], int *top, int c);
+int pop_stack(int stack[], int *top);
+bool stack_empty(int *top);
+bool stack_full(int *top, int STACK_SIZE);
 void project10_1(void );
 void project10_6(void );
 void project10_7(void );
@@ -221,20 +221,20 @@ bool is_digit(char c){
     return result;
 }
 
-void push_stack(int stack[], int* top, int c){
+void push_stack(int stack[], int *top, int c){
     stack[*top] = c;
     (*top)++;
 }
 
-int pop_stack(int stack[], int* top){
+int pop_stack(int stack[], int *top){
     (*top)--;
     return stack[*top];
 }
 
-bool stack_empty(int* top){
+bool stack_empty(int *top){
     return *top == 0;
 }
 
-bool stack_full(int* top, int STACK_SIZE){
+bool stack_full(int *top, int STACK_SIZE){
     return *top == STACK_SIZE;
 }
