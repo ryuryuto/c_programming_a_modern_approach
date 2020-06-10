@@ -17,10 +17,10 @@ bool is_digit(char c);
 
 
 
-int main(void ){
-    project10_7();
-    return 0;
-}
+//int main(void ){
+//    project10_7();
+//    return 0;
+//}
 
 void project10_1(void ){
     const int STACK_SIZE = 20;
