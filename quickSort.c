@@ -10,15 +10,15 @@ int partition(int *arr, int left, int right);
 void quickSortAlgs4(int *arr, int left, int right);//algs4中的quick sort
 
 
-int main(void ){
-    int arr[]={2, 4, 1, 3, 5};
-    int length = sizeof(arr) / sizeof(int);
-    quickSortAlgs4(arr, 0, length - 1);
-    for (int i = 0; i < length; ++i) {
-        printf("    %d", arr[i]);
-    }
-    return 0;
-}
+//int main(void ){
+//    int arr[]={2, 4, 1, 3, 5};
+//    int length = sizeof(arr) / sizeof(int);
+//    quickSortAlgs4(arr, 0, length - 1);
+//    for (int i = 0; i < length; ++i) {
+//        printf("    %d", arr[i]);
+//    }
+//    return 0;
+//}
 
 void swap(int *a, int *b){
     int temp = *b;
