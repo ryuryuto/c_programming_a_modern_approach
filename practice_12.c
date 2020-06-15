@@ -13,10 +13,10 @@ void project12_2(void );
 
 
 
-int main(void ){
-    project12_2();
-    return 0;
-}
+//int main(void ){
+//    project12_2();
+//    return 0;
+//}
 
 void project12_1(void ){
     const int LENGTH = 30;
