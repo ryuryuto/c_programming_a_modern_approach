@@ -22,12 +22,12 @@ void project13_18(void );
 
 
 
-int main(int argc, char *argv[]){
-    char c[10];
-    project13_18();
-
-    return 0;
-}
+//int main(int argc, char *argv[]){
+//    char c[10];
+//    project13_18();
+//
+//    return 0;
+//}
 
 
 void exercise13_5(int argc, char *argv[]){
